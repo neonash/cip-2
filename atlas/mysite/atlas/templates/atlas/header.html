@@ -1,0 +1,195 @@
+{% load staticfiles %}
+{% csrf_token %}
+<!--<!DOCTYPE html>-->
+<html lang="en">
+<head>
+        <title>    {% block title %}{% endblock %} </title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="{% static 'atlas/images/icons/favicon.ico' %}">
+        <link rel="apple-touch-icon" href="{% static 'atlas/images/icons/favicon.png' %}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{% static 'atlas/images/icons/favicon-72x72.png' %}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{% static 'atlas/images/icons/favicon-114x114.png' %}">
+        <!--Loading bootstrap css-->
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento:400italic,400,300,700">
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento:400,700,300">
+        <link type="text/css" rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <!--<link type="text/css" rel="stylesheet" href="{% static 'atlas/styles/jquery-ui-1.10.4.custom.min.css' %}">-->
+
+        <link type="text/css" rel="stylesheet" href="{% static 'atlas/styles/font-awesome.min.css' %}">
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <link type="text/css" rel="stylesheet" href="{% static 'atlas/styles/fileinput.min.css' %}" media="all" />
+
+        <link type="text/css" rel="stylesheet" href="{% static 'atlas/styles/animate.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'atlas/styles/all.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'atlas/styles/bootstrap.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'atlas/styles/main.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'atlas/styles/style-responsive.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'atlas/styles/zabuto_calendar.min.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'atlas/styles/pace.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'atlas/styles/jquery.news-ticker.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'atlas/styles/jsgrid.min.css' %}" />
+        <link type="text/css" rel="stylesheet" href="{% static 'atlas/styles/jsgrid-theme.min.css' %}" />
+
+    <!-- Latest compiled and minified CSS Bootstrap select-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="{% static 'atlas/styles/scroll_filter.css' %}">
+</head>
+<body>
+    <div>
+        <!--BEGIN BACK TO TOP-->
+        <a id="totop" href="#"><i class="fa fa-angle-up"></i></a>
+        <!--END BACK TO TOP-->
+
+        <!--BEGIN TOPBAR-->
+        <div id="header-topbar-option-demo" class="page-header-topbar">
+            <nav id="topbar" role="navigation" style="margin-bottom: 0;" data-step="3" class="navbar navbar-default navbar-static-top">
+            <div class="navbar-header">
+                <a id="logo" href="/search/" class="navbar-brand"><span class="logo-text" style="color:white">CIP</span><span style="display: none" class="logo-text-icon">µ</span></a>
+                <button type="button" data-toggle="collapse" data-target=".sidebar-collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+
+            </div>
+            <div class="topbar-main">
+                <a id="menu-toggle" href="#" class="hidden-xs"><i class="fa fa-bars"></i></a>
+
+                <ul class="nav navbar navbar-top-links navbar-right mbn" style="border:0px;margin-right:0px;">
+
+                    <li class="dropdown topbar-user"><a data-hover="dropdown" href="#" class="dropdown-toggle"><img src="{% static 'atlas/images/avatar/user48.png' %}" alt="" class="img-responsive img-circle"/>&nbsp;<span class="hidden-xs">neo</span>&nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-user pull-right">
+                            <li><a href="{% url 'login' %}"><i class="fa fa-key"></i>Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--END TOPBAR-MAIN -->
+        </nav><!--END TOPBAR-->
+        </div>
+        <!--END TOPBAR-->
+
+        <div id="wrapper">
+            <!--BEGIN SIDEBAR MENU-->
+            <nav id="sidebar" role="navigation" data-step="2" data-intro="Template has &lt;b&gt;many navigation styles&lt;/b&gt;" data-position="right" class="navbar-default navbar-static-side">
+                <div class="sidebar-collapse menu-scroll">
+                    <ul id="side-menu" class="nav">
+                        <div class="clearfix"></div>
+                        <li id = "search" class="treeview">
+                            <a href="/">
+                                <i class="fa fa-search fa-fw">
+                                    <div class="icon-bg bg-orange"></div>
+                                </i>
+                                <span class="menu-title">Search</span>
+                            </a>
+                        </li>
+
+                        <div class="clearfix"></div>
+<!--                        <li id = "analysis" class="treeview hidden">
+                            <a href="/analysis/">
+                                <i class="fa fa-list-alt fa-fw">
+                                    <div class="icon-bg bg-orange"></div>
+                                </i>
+                                <span class="menu-title">Analysis</span>
+                            </a>
+                        </li>-->
+
+                        <li id="parent" class="hidden">
+						<a href="#">
+							<i class="fa fa-sitemap fa-fw">
+								<!--<div class="icon-bg bg-dark"></div>-->
+							</i>
+							<span class="menu-title">Analytics</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul>
+                            <li id="summary" style="padding:5px;"><a href="/summary/" style="padding: 5px;"> Summary</a></li>
+							<li id="analysis" style="padding:5px;"><a href="/analysis/" style="padding: 5px;"> Analysis</a></li>
+							<li id="requestTopic" style="padding:5px;"><a href="/topicmodeling/" style="padding: 5px;"> Topic Model</a></li>
+							<li id="clustering" style="padding:5px;"><a href="/clustering/" style="padding: 5px;"> Result Clustering</a></li>
+                            <!--<li id="comparison" style="padding:5px;"><a href="/compare/" style="padding: 5px;"> Product Comparison </a></li>-->
+                        </ul>
+                        </li>
+
+
+                        <li id = "upload" class="treeview">
+                            <a href="/upload/">
+                                <i class="fa fa-upload fa-fw">
+                                    <div class="icon-bg bg-orange"></div>
+                                </i>
+                                <span class="menu-title">Upload</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--END SIDEBAR-COLLAPSE-MENU-SCROLL-->
+            </nav><!--END SIDEBAR-->
+            {% block content %}
+            {% endblock %}
+            </div><!--END WRAPPER-->
+    </div><!--END DIV INSIDE BODY -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{% static 'atlas/script/vendor/jquery-1.10.2.min.js' %}"></script>
+    <script src="{% static 'atlas/script/vendor/jquery-migrate-1.2.1.min.js' %}"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="{% static 'atlas/script/vendor/canvas-to-blob.min.js' %}"></script>
+    <script src="{% static 'atlas/script/vendor/sortable.min.js' %}"></script>
+    <script src="{% static 'atlas/script/vendor/purify.min.js' %}"></script>
+    <script src="{% static 'atlas/script/fileupload/vendor/jquery.ui.widget.js' %}"></script>
+    <script src="{% static 'atlas/script/vendor/fileinput.min.js' %}"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--Angular Scripts-->
+    <script src = "{% static 'atlas/script/vendor/angular.min.js' %}"></script>
+    <script src = "{% static 'atlas/script/vendor/angular-route.min.js' %}"></script>
+    <script src = "{% static 'atlas/script/vendor/angular-resource.min.js' %}"></script>
+
+    <script src="{% static 'atlas/script/vendor/bootstrap-hover-dropdown.js' %}"></script>
+    <script src="{% static 'atlas/script/vendor/html5shiv.js' %}"></script>
+    <script src="{% static 'atlas/script/vendor/respond.min.js' %}"></script>
+    <script src="{% static 'atlas/script/vendor/jquery.metisMenu.js' %}"></script>
+    <script src="{% static 'atlas/script/vendor/jquery.slimscroll.js' %}"></script>
+    <script src="{% static 'atlas/script/vendor/jquery.cookie.js' %}"></script>
+    <script src="{% static 'atlas/script/vendor/icheck.min.js' %}"></script>
+    <script src="{% static 'atlas/script/vendor/custom.min.js' %}"></script>
+    <script src="{% static 'atlas/script/vendor/jquery.menu.js' %}"></script>
+    <script src="{% static 'atlas/script/vendor/pace.min.js' %}"></script>
+    <script src="{% static 'atlas/script/vendor/holder.js' %}"></script>
+    <script src="{% static 'atlas/script/vendor/responsive-tabs.js' %}"></script>
+
+    <script src="{% static 'atlas/script/vendor/jquery.flot.js' %}"></script>
+    <script src="{% static 'atlas/script/vendor/jquery.flot.categories.js' %}"></script>
+
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+
+    <!-- Latest compiled and minified JavaScript Bootstrap selet-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+
+    <!-- (Optional) Latest compiled and minified JavaScript translation files bootstrap select -->
+<!--
+    <script src="{% static 'atlas/script/highcharts.js' %}"></script>
+-->
+
+    <script src="{% static 'atlas/script/vendor/exporting.js' %}"></script>
+
+    <script>
+        $('#menu-toggle').on('click', function () {
+            console.log("inside menu-toggle click event");
+
+        });
+    </script>
+
+    {% block imports %}
+    {% endblock %}
+
+</body>
+</html>

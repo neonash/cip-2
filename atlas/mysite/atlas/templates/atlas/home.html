@@ -1,0 +1,227 @@
+{% extends 'atlas/header.html' %}
+
+{% block title %}ATLAS | Summary{% endblock %}
+
+{% block content %}
+
+<div id="page-wrapper">
+    <!--BEGIN TITLE & BREADCRUMB PAGE-->
+    <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+        <div class="page-header pull-left">
+            <div class="page-title">Summary</div>
+        </div>
+        <ol class="breadcrumb page-breadcrumb pull-right">
+            <li><i class="fa fa-home"></i>&nbsp;<a href="/home/">Home</a>&nbsp;&nbsp;</li>
+            <!--<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+            <li class="hidden"><a href="#">Dashboard</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+            <li class="active">Dashboard</li>-->
+        </ol>
+        <div class="clearfix"></div>
+    </div>
+    <!--END TITLE & BREADCRUMB PAGE-->
+
+    <!--BEGIN CONTENT-->
+    <div class="page-content">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                Product Category
+                                &nbsp;
+                                <select id="prodcat" style="width:80px">
+                                    <option>TV</option>
+                                    <option>Home Theatre</option>
+                                    <option>Refrigerator</option>
+                                    <option>Hot Plate</option>
+                                </select>
+                            </div><!--END COL-LG-3 -->
+
+                            <div class="col-lg-3">
+                                Brand
+                                &nbsp;
+                                <select id="brand" style="width:80px">
+                                    <option>Samsung</option>
+                                    <option>Sony</option>
+                                    <option>Whirlpool</option>
+                                    <option>Philips</option>
+                                </select>                                        
+                            </div><!--END COL-LG-3 -->
+
+                            <div class="col-lg-3">
+                            
+                                Product ID
+                                &nbsp;
+                                <select id="prodID">
+                                    <option value="sku1234567890">1234567890</option>
+                                    <option value="sku2345678901">2345678901</option>
+                                    <option value="sku3456789012">3456789012</option>
+                                    <option value="sku4567890123">4567890123</option>
+                                </select>
+                            
+                            </div><!--END COL-LG-3 -->
+                                Product Title
+                                &nbsp;
+                                <select id="prodTitle" style="width:120px">
+                                    <option value="sku1234567890">TCL 32S3800 32-Inch 720p Roku Smart LED TV (2015 Model)</option>
+                                    <option value="sku2345678901">VIZIO E32-C1 32-Inch 1080p Smart LED TV (2015 Model)</option>
+                                    <option value="sku3456789012">Samsung UN32J5205 32-Inch 1080p Smart LED TV (2015 Model)</option>
+                                    <option value="sku4567890123">Samsung UN24H4500 24-Inch 720p Smart LED TV (2014 Model)</option>
+                                    <option value="sku5678901234">TCL 28S3750 28-Inch 720p Roku Smart LED TV</option>
+                                </select>
+                            <div class="col-lg-3" >
+                                
+                            </div><!--END COL-LG-3 -->
+                        </div><!-- END ROW -->
+                        <br/>
+                        <div class = "row">
+                            <div class="col-lg-12">
+                                <div class="col-lg-3">
+                                    Select Year
+                                    &nbsp;
+                                    <select id="year">
+                                        <option value="y2016">2016</option>
+                                        <option value="y2015">2015</option>
+                                        <option value="y2014">2014</option>
+                                        <option value="y2013">2013</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3">
+                                    Select Month
+                                    &nbsp;
+                                    <select id="month">
+                                        <option value="1">January</option>
+                                        <option value="2">February</option>
+                                        <option value="3">March</option>
+                                        <option value="4">April</option>
+                                        <option value="5">May</option>
+                                        <option value="6">June</option>
+                                        <option value="7">July</option>
+                                        <option value="8">August</option>
+                                        <option value="9">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3">
+                                    <!-- col-lg-3 -->
+                                </div>
+                                <div class="col-lg-3" align="right" style="vertical-align: center">
+                                    <button type="button" class="btn btn-default btn-block btn-sm" style="height: 30px;padding-left: 40px;padding-right: 40px">Filter</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--END PANEL BODY -->
+                </div><!--END PANEL PANEL DEFAULT -->
+            </div><!--END COL-LG-12 -->
+        </div><!--END ROW -->
+        
+        <div class="row">
+         
+            <div class="col-lg-6">
+                <div class="portlet box">
+                    <!--<div class="portlet-header">
+                        <div class="caption">Line Chart</div>
+                        <div class="tools"><i class="fa fa-chevron-up"></i></div>
+                    </div>-->
+                    <div class="portlet-body">
+                        <div id="line-chart" style="width: 100%; height:300px"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="portlet box" >
+                    <!--<div class="portlet-header">
+                        <div class="caption">Bar Chart</div>
+                        <div class="tools"><i class="fa fa-chevron-up"></i></div>
+                    </div>-->
+                    <div class="portlet-body">
+                        <div id="bar-chart" style="width: 100%; height:300px"></div>
+                    </div>
+                </div>
+            
+            </div><!--END COL-LG-6 -->
+
+            
+        </div><!--END ROW-->
+        <!--
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-9"  style="text-align: center;border:1px solid #dbd8d2;padding-top: 10px;padding-bottom:10px; background-color: #77787a; color: white">
+                                Select NLP Unit for Customer Feedbacks
+                            </div>
+
+                            <div class="col-lg-3" >
+                                <button type="button" class="btn btn-default btn-block btn-sm" onclick="window.location='ATLAS_Home.html'">NLP - Summary</button>
+                            </div>
+                        </div><!--END ROW ->
+
+                        <div class="row">
+                            <br/>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default btn-block btn-sm" onclick="window.location='ATLAS_Sentiment.html'">Sentiment Analysis</button>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default btn-block btn-sm" >Mood/Opinion Analysis</button>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default btn-block btn-sm" >Clusters</button>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default btn-block btn-sm" >Triggers of Purchase</button>
+                            </div>
+                        </div><!--END ROW ->
+
+                        <div class="row">
+                            <br/>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default btn-block btn-sm">Drivers of Purchase</button>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default btn-block btn-sm" >Key Strengths</button>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default btn-block btn-sm" >Key Weakness</button>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <button type="button" class="btn btn-default btn-block btn-sm" >Ratings/NPS</button>
+                            </div>
+                        </div><!--END ROW ->
+                    </div><!--END COL-LG-12 ->
+                    </div><!--END PANEL BODY ->
+                </div><!--END PANEL PANEL DEFAULT ->
+            </div><!--END COL-LG-12 ->
+
+        </div><!--END ROW ->
+        -->
+    </div>
+    <!--END CONTENT-->
+
+    <!--BEGIN FOOTER-->
+    <!--<div id="footer">
+        <div class="copyright">
+            2017 © LatentView Analytics Pvt. Ltd.
+        </div>
+    </div>-->
+    <!--END FOOTER-->
+</div>
+<!--END PAGE WRAPPER-->
+{% endblock %}

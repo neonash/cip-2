@@ -1,0 +1,164 @@
+{% extends 'atlas/header.html' %}
+
+{% load staticfiles %}
+{% block title %} CIP -  Consumer Insights Platform | Analysis {% endblock %}
+
+{% block content %}
+{% verbatim %}
+
+<div id="page-wrapper" data-ng-app="gemStore">
+    <!--BEGIN TITLE & BREADCRUMB PAGE-->
+    <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+        <div class="page-header pull-left">
+            <div class="page-title">Comparison</div>
+        </div>
+        <ol class="breadcrumb page-breadcrumb pull-right">
+            <!--<li><i class="fa fa-home"></i>&nbsp;<a href="/home/">Home</a>&nbsp;&nbsp;</li>-->
+            <!--<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+            <li class="hidden"><a href="#">Dashboard</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+            <li class="active">Dashboard</li>-->
+        </ol>
+        <div class="clearfix"></div>
+    </div>
+    <!--END TITLE & BREADCRUMB PAGE-->
+
+    <!--BEGIN CONTENT-->
+    <div class="page-content">
+        <div class="content-wrapper">
+
+
+
+        <div class="row">
+
+            <div class="col-lg-6">
+                <div class="portlet box">
+                    <div class="portlet-body">
+                        <div id="Chart1select" class="row">
+                            <div class="col-lg-12">
+                                <!--<center>-->
+                                <!--<div class="col-lg-3" >-->
+                                <label for="brand1">Brand&emsp;</label>
+                                <select id="brand1" class="selectpicker" multiple data-actions-box="true" data-live-search="true"
+                                data-selected-text-format="count>2" data-count-selected-text= "{0} brands selected" data-width="fit">
+                                </select>
+                                <!--</div>-->
+
+
+                                <label for="sku1">&emsp;&emsp;SKU&emsp;</label>
+                                <select id='sku1' class="selectpicker" multiple data-actions-box="true" data-live-search="true"
+                                data-selected-text-format="count>2" data-count-selected-text= "{0} Models selected" data-width="fit">
+                                </select>
+
+                                <!--</center>-->
+                            </div>
+
+                        </div>
+
+                        <!--  Products Container  -->
+                        <div class="list-group">
+                          <!--  Product Container  -->
+                          <div class="list-group-item" data-ng-repeat="product in store.products | orderBy:'-price'">
+
+                            <!-- $index Practice:  -->
+                            <h3>Gem #{{$index + 1}}: {{product.name | uppercase}}<em class="pull-right">{{product.price | currency}}</em>
+                            </h3>
+
+                            <!-- Image Gallery  -->
+                            <div data-ng-show="product.images.length" data-ng-controller="GalleryController as gallery">
+                              <div class="img-wrap">
+                                <img data-ng-src="{{product.images[gallery.imageIndex]}}" class="img-thumbnail center-block" />
+                              </div>
+                              <ul class="img-thumbnails clearfix">
+                                <li class="small-image pull-left thumbnail" data-ng-repeat="image in product.images" data-ng-click="gallery.currentImageChange($index)">
+                                  <img data-ng-src="{{image}}" />
+                                </li>
+                              </ul>
+                            </div>
+
+                            <!-- Product Tabs  -->
+                            <product-tabs></product-tabs>
+
+                          </div>
+                        </div>
+                        <!--  Products Container Ends  -->
+
+
+                        <div id="line-chart" style="width: 100%; height:300px"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="portlet box" >
+
+                    <div class="portlet-body">
+                        <div id="Chart2select" class="row">
+                            <div class="col-lg-12">
+                                <!--<center>-->
+                                <!--<div class="col-lg-3" >-->
+                                <label for="brand2">Brand&emsp;</label>
+                                <select id="brand2" class="selectpicker" multiple data-actions-box="true" data-live-search="true"
+                                data-selected-text-format="count>2" data-count-selected-text= "{0} brands selected" data-width="fit">
+                                </select>
+                                <!--</div>-->
+
+
+                                <label for="sku2">&emsp;&emsp;SKU&emsp;</label>
+                                <select id='sku2' class="selectpicker" multiple data-actions-box="true" data-live-search="true"
+                                data-selected-text-format="count>2" data-count-selected-text= "{0} Models selected" data-width="fit">
+                                </select>
+
+                                <!--</center>-->
+                            </div>
+
+                        </div>
+                        <div id="bar-chart" style="width: 100%; height:300px"></div>
+                    </div>
+                </div>
+
+            </div><!--END COL-LG-6 -->
+
+
+        </div><!--END ROW-->
+
+        <!-- Doughnut charts for triggers drivers -->
+
+        <!--<div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+
+                    </div><!--END PANEL BODY ->
+                </div><!--END PANEL PANEL DEFAULT ->
+            </div><!--END COL-LG-12 ->
+
+        </div><!--END ROW ->-->
+        </div>
+    </div>
+    <!--END PAGE CONTENT-->
+
+    <!--BEGIN FOOTER-->
+    <!--<div id="footer">
+        <div class="copyright">
+        </div>
+    </div>-->
+    <!--END FOOTER-->
+</div>
+<!--END PAGE WRAPPER-->
+{% endverbatim %}
+{% endblock %}
+
+{% block imports %}
+
+    <link type="text/css" rel="stylesheet" href="{% static 'atlas/styles/comparison-style.css' %}">
+
+    <!--<script src="{% static 'atlas/script/chart_utils.js' %}"></script>-->
+    <script src="{% static 'atlas/script/url_utils.js' %}"></script>
+    <!--<script src="{% static 'atlas/script/sentiment.js' %}"></script>-->
+    <script src="{% static 'atlas/script/comparison.js' %}"></script>
+    <script src="{% static 'atlas/script/comparison-app.js' %}"></script>
+
+    <!--<script src="{% static 'atlas/script/Triggers_DonutChartJS1.js' %}"></script>-->
+    <!--<script src="{% static 'atlas/script/Drivers_DonutChartJS1.js' %}"></script>-->
+
+
+{% endblock %}

@@ -1,0 +1,17 @@
+reqId,reqKw,reqTime,reqStatus
+1,headphones,"Thursday, 29. June 2017 02:05:44 PM",Completed
+2,heater,"Thursday, 29. June 2017 04:41:50 PM",Completed
+3,smartphone,"Thursday, 29. June 2017 05:42:16 PM",Completed
+4,Television,"Thursday, 06. July 2017 06:52:11 PM",Completed
+5,washer,"Friday, 07. July 2017 12:36:31 PM",Pending
+6,Kelloggs,"Friday, 08. September 2017 10:36:31 AM",Pending
+7,Cars,"Friday, 08. September 2017 10:36:31 AM",Completed
+8,BMW_02_92.csv,"Tuesday, 13. February 2018 05:15:28 PM",Pending
+9,cars5k.csv,"Tuesday, 20. February 2018 02:54:55 PM",Pending
+10,phone,"Wednesday, 21. February 2018 05:44:09 PM",Pending
+11,cable,"Friday, 23. February 2018 12:16:56 PM",Pending
+12,tv cable,"Thursday, 08. March 2018 11:27:51 AM",Pending
+13,usb,"Thursday, 08. March 2018 11:38:44 AM",Pending
+14,testcsv9.csv,"Monday, 02. April 2018 04:18:44 PM",Analysis complete
+15,testcsv9.csv,"Wednesday, 25. April 2018 04:33:23 PM",Analysis complete
+16,testcsv10.csv,"Friday, 04. May 2018 05:35:00 PM",Analysis complete

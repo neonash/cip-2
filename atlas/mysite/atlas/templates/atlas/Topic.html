@@ -1,0 +1,85 @@
+{% extends 'atlas/header.html' %}
+
+{% block title %}CIP - Consumer Insights  Platform | Topic Model{% endblock %}
+
+{% load staticfiles %}
+{% csrf_token %}
+
+
+{% block content %}
+<div id="page-wrapper">
+    <!--BEGIN TITLE & BREADCRUMB PAGE-->
+    <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+        <div class="page-header pull-left">
+            <div class="page-title">Topic Model<a class="btn btn-default btn-sm" data-toggle="modal" data-target="#helpModal" title="More info" style="border:0px;background:transparent;"><span class="glyphicon glyphicon-info-sign"></span></a></div>
+            <!-- Modal -->
+            <div id="helpModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">How to use Topic Modeling</h4>
+                  </div>
+                  <div class="modal-body">
+                    <ul>
+                        <li>Topic modeling is used to discover the abstract topics that occur within the dataset</li>
+                        <li>The "topics" produced by topic modeling techniques are clusters of similar words</li>
+                        <li>Intuitively, given that a document is about a particular topic, one would expect particular words to appear in the document more frequently. For e.g., "dog" and "bone" will appear more often in documents about dogs, "cat" and "meow" will appear in documents about cats, and "the" and "is" will appear equally in both</li>
+                        <li>A document typically concerns multiple topics in different proportions; thus, in a document that is 10% about cats and 90% about dogs, there would probably be about 9 times more dog words than cat words</li>
+                        <li>A topic model captures this intuition in a mathematical framework, which allows examining a set of documents and discovering, based on the statistics of the words in each, what the topics might be and what each document's balance of topics is</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+        </div>
+
+        <!--<ol class="breadcrumb page-breadcrumb pull-right">
+            <li><i class="fa fa-home"></i>&nbsp;<a href="#">Home</a>&nbsp;&nbsp;</li>
+        </ol>-->
+        <div class="clearfix"></div>
+    </div>
+    <!--END TITLE & BREADCRUMB PAGE-->
+
+    <!--BEGIN CONTENT-->
+    <div class="page-content">
+        <div class="row">
+            <div class="col-lg-12" >
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row" style="overflow-x:auto;">
+                                {% include product %}
+                        </div>
+
+                        <!--<div class="clearfix"></div>
+
+                        <br/><br/>
+                        <br/><br/>-->
+
+                    </div><!--END PANEL BODY -->
+                </div><!--END PANEL PANEL DEFAULT -->
+            </div><!--END COL-LG-12 -->
+        </div><!--END ROW -->
+
+    </div>
+    <!--END CONTENT-->
+
+    <!--BEGIN FOOTER-->
+    <!--<div id="footer">
+        <div class="copyright">
+        </div>
+    </div>-->
+    <!--END FOOTER-->
+</div>
+
+{% endblock %}
+
+{% block imports %}
+    <script src="{% static 'atlas/script/url_utils.js' %}"></script>
+    <!--<script src="{% static 'atlas/script/upload.js' %}"></script>-->
+    <script src="{% static 'atlas/script/topicmodeling.js' %}"></script>
+
+{% endblock %}

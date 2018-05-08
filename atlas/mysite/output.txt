@@ -1,0 +1,8 @@
+Performing system checks...
+
+Imports complete
+System check identified no issues (0 silenced).
+April 25, 2018 - 18:18:24
+Django version 1.11.1, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.

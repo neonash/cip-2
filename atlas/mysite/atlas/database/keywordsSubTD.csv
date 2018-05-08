@@ -1,0 +1,17 @@
+Keywords,Types,Subtypes,ToD
+(wanted|needed|required|latest|upgrade|purchased).*(big.*| fast.*|better|small.*|modern|improve.*)|(big.*|fast.*|better|small.*|modern|improve.*).*(wanted|needed|required|latest|upgrade|purchased),Upgrade,Upgrade_Upgrade,Triggers_Upgrade
+replac.*|switch.*,Replace,Replace_Replace,Triggers_Replace
+(first device|first visit|first-time.*|firstime.*| firsttime.*|first product |first purchase |I am new |I am a new.*)|(purchase.*|brought|buy.*|bought.*),FirstTimeBuyer,FirstTimeBuyer_FirstTimeBuyer,Triggers_FirstTimeBuyer
+birthday present|birthday gift,Gift,Gift_Birthday,Triggers_Gift_Birthday
+wedding present|wedding gift,Gift,Gift_Wedding,Triggers_Gift_Wedding
+christmas present |xmas present |christmas gift|xmas gift,Gift,Gift_Christmas,Triggers_Gift_Christmas
+gift.*|.*gift|a present ,Gift,Gift_Others,Triggers_Gift_Others
+deal.*|promo.*|rebate.*|sale.*|sweepstake.*|coupon.*| cupon.*|cuopon.*|discount.*| offer.*,Marketing-Sale,Marketing-Sale_Marketing-Sale,Triggers_Marketing-Sale
+(Whirlpool|KitchenAid|Dylan|Maytag|Sony|Philips|Phillips|Hotpoint|indesit|Amana|Apple|iPhone|iPad|iPod|Jenn-Air|Gladiator|Hotpoint|Roper|GE|Samsung|JBL|JustBeLoud|Just Be Loud|Kenmore|Bosch|LG|Broan|Beko|Dacor|zanussi|Bush|hoover|Panasonic|smeg|Electrolux|neff|Candy|aeg|Sharp|Miele|baumatic|Siemens|New World|belling|Russell Hobbs|Monogram|newworld|Haier|LEC|Summit Appliance|Magic|NuTone|Daewoo|fridgemaster|Essentials|Golden|swan|DeLonghi|De Longhi|Servis|Stoves|electra|Premier|Oster|Danby|Fisher|AKDY|Hisens|InSinkErator|Zephyr|Kenwood|LOGIK|Avanti|Thermador|Waste King|Morphy Richards|RCA|Cookworks|Grundig|leisure|Magic Chef|White Knight|Viking|Wolf|Arietta|Emerson|Hamilton Beach|Presenza|Sunbeam|this brand)|(trust.*|recommend.*|love|satisfied|reliab.*|confident|genuine|depend.*),Brand,Brand_Brand,Drivers_Brand
+(inexpensive|value for money|affordable|low price|vfm|great price|amazing price|excellent price|low cost|amazing value|a steal|peanuts|good price|awesome price|economical|nominal|cheaply available)|(energy.*|.*power.*|.*saving),Cost,Cost_Cost,Drivers_Cost
+(recommend.*|suggest.*|propose.*|endors.*|advocate.*)|(friend.*|representative|sales.*|family|cousin|someone|expert),Recommendation,Recommendation_Recommendation,Drivers_Recommendation
+(innovat.*|technology)|(idea.?|addon.?|add-on.?|feature.*|attribute.*|characteristic.*|aspect|element),Innovation,Innovation_Innovation,Drivers_Innovation
+ad.?advert.*|commercial.?|comercial.?|tv spot.?|sponsor.*|on tv| on television|on the tv|on the television,Marketing-Ads,Marketing-Ads_TV,Drivers_Marketing-Ads_TV
+radio spot.?|on radio|on the radio,Marketing-Ads,Marketing-Ads_Radio,Drivers_Marketing-Ads_Radio
+billboard.?|bilboard.?|bill board.?|signage|plastered outside|plastered outdoor|plastered all over|signs|banner.*|poster.*,Marketing-Ads,Marketing-Ads_Outdoor,Drivers_Marketing-Ads_Outdoor
+ad.?advert.*|marketing|mktg|target audience.?,Marketing-Ads,Marketing-Ads_Others,Drivers_Marketing-Ads_Others

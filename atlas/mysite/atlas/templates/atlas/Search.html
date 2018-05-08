@@ -1,0 +1,193 @@
+{% extends 'atlas/header.html' %}
+
+{% block title %}CIP -  Consumer Insights Platform| Search{% endblock %}
+
+{% load staticfiles %}
+{% csrf_token %}
+
+
+{% block content %}
+<div id="page-wrapper">
+    <!--BEGIN TITLE & BREADCRUMB PAGE-->
+    <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+        <div class="page-header pull-left">
+            <div class="page-title">Search</div>
+        </div>
+        <ol class="breadcrumb page-breadcrumb pull-right">
+        </ol>
+        <div class="clearfix"></div>
+    </div>
+    <!--END TITLE & BREADCRUMB PAGE-->
+
+    <!--BEGIN CONTENT-->
+    <div class="page-content">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-6">
+                                 <h4>Search keyword: &nbsp; <input type="text" name="searchterm" id="search-query"/></h4>
+                            </div>
+                            <div class="col-lg-2"><a class="btn btn-default btn-block btn-sm" id="search-query-submit">Search</a></div>
+                            <div class="col-lg-2">
+                            </div>
+                        </div>
+                        <div class="row hidden" id="refresh-info">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-2">
+                                 <h4>Last Refreshed: &nbsp;</h4>
+                            </div>
+                            <div class="col-lg-4">
+                                <span id="last-refreshed"></span>
+                            </div>
+                            <div class="col-lg-2">
+                                <a class="btn btn-default btn-block btn-sm" id="refresh-data">Refresh Data</a>
+                            </div>
+
+                            <div class="col-lg-2"></div>
+                        </div>
+
+                        <br/><br/>
+
+                        <div class="row">
+
+                            <div class="col-lg-2"></div>
+
+                            <div class="col-lg-4" id="allCheckboxes">
+
+                                <h5 style="font-weight:bold;">Sources to extract from:</h5>
+                                <div class="checkbox" style="padding:5px">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="chkBox1" name="am" value="am">Amazon
+                                    </label>
+                                </div>
+                                <div class="checkbox" style="padding:5px">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="chkBox2" name="hd" value="hd">HomeDepot
+                                    </label>
+                                </div>
+                                <div class="checkbox" style="padding:5px">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="chkBox3" name="wm" value="wm">Walmart
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <!--<h5 style="font-weight:bold;"># of topics (Topic modeling):</h5>-->
+                                <!--<input type="number" name="number of topics" id="noOfTopics" min="3" max="8" size="1" value="5"/>-->
+                            </div>
+
+                            <div class="col-lg-2"></div>
+
+
+
+                        </div>
+
+                        <br/><br/>
+                        <br/><br/>
+                        <div class="row hidden" id="request-notification">
+                            <div class="col-lg-12">
+                                <h5>Request raised succesfully </h5>
+                            </div>
+                        </div>
+                        <div class="row hidden" id="create-request">
+                            <div class="col-lg-12">
+                                <h5>We cannot find any data for the query you made, to raise a request click <span style="text-decoration: underline;"><a href="#" id="make-request" target="_self">here</a></span>.</h5>
+                            </div>
+                        </div>
+                    </div><!--END PANEL BODY -->
+                </div><!--END PANEL PANEL DEFAULT -->
+            </div><!--END COL-LG-12 -->
+        </div><!--END ROW -->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-body" style="">
+                        <h3>Requests Queue</h3>
+                            <!--{% include "atlas/includes/Jsgrid.html" %}-->
+                            <div id="jsGrid"></div>
+
+                    </div><!--END PANEL BODY -->
+                </div><!--END PANEL PANEL DEFAULT -->
+            </div><!--END COL-LG-12 -->
+        </div><!--END ROW -->
+
+    </div>
+    <!--END CONTENT-->
+
+    <!--BEGIN FOOTER-->
+    <!--<div id="footer">
+        <div class="copyright">
+        </div>
+    </div>-->
+    <!--END FOOTER-->
+</div>
+
+{% endblock %}
+
+{% block imports %}
+    <script src="{% static 'atlas/script/search.js' %}"></script>
+    <script src="{% static 'atlas/script/url_utils.js' %}"></script>
+    <script src="{% static 'atlas/script/vendor/jsgrid.min.js' %}"></script>
+    <script type="text/javascript">
+        //var js_list = "{{dict|safe}}";
+        //var json_string = unescape({{json_list|safe|escape}});
+        //console.log(json_string);
+        //console.log(js_list);
+
+
+
+        var productList = [];
+        /*
+        ls = (Object.keys({{dict_time|safe}}));
+        ts = (Object.values({{dict_time|safe}}));
+        obj = JSON.stringify({{dict_time|safe}})
+        //console.log(obj)
+        obj = JSON.parse(obj)
+        //console.log(obj)
+        for ( i in ls ) {
+            val = obj[ls[i]]
+            console.log(val)
+        }
+        */
+
+        var createAutoCompleteListFromProductList = function(productList) {
+            var autoCompleteList = [];
+
+            for (var i in productList) {
+                autoCompleteList.push(productList[i].name)
+            }
+            $( "#search-query" ).autocomplete({
+                source: autoCompleteList
+            });
+        };
+
+        $.get('/service/product_list/').then(function (successResponse) {
+            productList = JSON.parse(successResponse);
+            autoLs = createAutoCompleteListFromProductList(productList)
+            console.log(productList)
+
+        }, function (errorResponse) {
+
+        });
+
+        $("#search-query").change(function() {
+             console.log( "Handler for .change() called." );
+             tag = $('#search-query').val();
+             console.log('Product', tag);
+             for (i in productList){
+                if(productList[i]["name"] == tag){
+                    $("#last-refreshed").text(productList[i]["lastUpdated"])
+                    console.log(productList[i]["lastUpdated"])
+                }
+             }
+        });
+
+
+
+    </script>
+{% endblock %}

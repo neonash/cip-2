@@ -1,0 +1,313 @@
+{% extends 'atlas/header.html' %}
+
+{% block title %}CIP - Customer Insights Platform | Upload{% endblock %}
+
+{% load staticfiles %}
+{% csrf_token %}
+
+
+{% block content %}
+<div id="page-wrapper">
+    <!--BEGIN TITLE & BREADCRUMB PAGE-->
+    <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+        <div class="page-header pull-left">
+            <div class="page-title">Upload</div>
+        </div>
+        <!--<ol class="breadcrumb page-breadcrumb pull-right">
+            <li><label id="help" style="cursor:pointer;">Help</label></li>
+        </ol>-->
+        <div class="clearfix"></div>
+    </div>
+    <!--END TITLE & BREADCRUMB PAGE-->
+
+    <!--BEGIN CONTENT-->
+    <div class="page-content">
+
+        <div class="row" style="color:black;"><!--style="display:none;"-->
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#helpbox" style="margin-left:15px;background:white;border-color:#e5e5e5;color:black;">See instructions here <i class="fa fa-chevron-down"></i></button>
+            <div class="col-lg-12">
+                <div class="panel panel-default collapse" id="helpbox">
+                    <div class="panel-body">
+                        <ul>
+                            <li>You can upload your own datasets in <b>.csv/.tsv/.txt</b></li>
+                            <p>The uploaded dataset should contain atleast two columns ("<b>rid</b>": primary key and "<b>rText</b>": review content). It can optionally also contain following columns:
+                                <p style="margin-left:20px;"><table style="font-size:12px;color:black;">
+                                    <tr>
+                                        <td><b>rTitle</b> (Review title)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>rRating</b> (Value between 0.0 and 5.0)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>rDate</b> (YYYY-MM-DD)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>rDate2</b> (Unix timestamp of rDate)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>rUser</b> (Review author)</td>
+                                    </tr>
+                                </table></p>
+                            </li>
+                            <li>You can also <b>upload your custom dictionaries</b> for sentiment and/or trigger/driver tagging</li>
+                            <li>The format for sentiment dictionary is as follows:<br/>
+                            <p style="margin-left:20px;"><b>phrase</b>&lt;tabspace&gt;<b>value between -5 to 5</b><br/></p>
+                                For example:
+                                <p style="margin-left:25px;">
+                                    <b>handy</b>&lt;tabspace&gt;<b>3</b><br/>
+                                    <b>horrible</b>&lt;tabspace&gt;<b>-3</b>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p></p>
+        <div class="row" id="tag_panel" style="color:black;">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h4 style="margin-top:10px;margin-bottom:30px;">Step 1: Tagging Dictionary</h4>
+                            </div>
+                            <div class="col-lg-5"></div>
+                            <div class="col-lg-1">
+                                <span class="pull-right"><button id="btnNext0" type="button" name="next">Next</button></span>
+                            </div>
+                        </div>
+
+                        <div class="row" id="tag_upload">
+                            <div class="col-lg-12">
+                                <h5>Upload tagging dictionary</h5>
+                                <label class="control-label hidden">Select Dataset</label>{% csrf_token %}
+                                <input id="input-440" name="input440[]" type="file" multiple class="file-loading" >{% csrf_token %}
+                            </div>
+                        </div>
+                        <!-- COMMENTED TEMPORARILY.......
+                        <hr/>
+                        <h4>Dimensions and Levels in your dictionary</h4>
+                        <!--{% include "atlas/includes/Jsgrid.html" %}->
+                        <div id="jsgrid"></div>
+                        <table id="configTable" border="1px solid black">
+
+                        </table>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p></p>
+        <div class="row hidden" id="sd_panel" style="color:black;">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h4 style="margin-top:10px;margin-bottom:30px;">Step 2: Sentiment Tagging Dictionary</h4>
+                            </div>
+                            <div class="col-lg-5"></div>
+                            <div class="col-lg-1">
+                                <span class="pull-right"><button id="btnNext1" type="button" name="next">Next</button></span>
+                            </div>
+                        </div>
+
+                        <div class="radiogroup">
+                            <input type="checkbox" name="opt1" value="upld" checked="true"/>
+                            <span style="padding-left:2px;"> Upload your own dictionary (deselect to use default dictionary)</span>
+                            <span style="padding-left:2px;color:blue;"> Don't forget to click on <b>Upload</b> button!</span>
+                        </div>
+
+                        <div class="row" id="sd_upload">
+                            <div class="col-lg-12">
+                                <label class="control-label hidden">Select Dataset</label>{% csrf_token %}
+                                <input id="input-441" name="input441[]" type="file" multiple class="file-loading" >{% csrf_token %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--&lt;!&ndash; The fileinput-button span is used to style the file input field as button &ndash;&gt;-->
+        <!--<span class="btn btn-success fileinput-button">-->
+            <!--<i class="glyphicon glyphicon-plus"></i>-->
+            <!--<span>Select files...</span>-->
+            <!--&lt;!&ndash; The file input field used as target for the file upload widget &ndash;&gt;-->
+            <!--<input id="fileupload" type="file" name="files[]"  >-->
+        <!--</span>-->
+        <!--<br>-->
+        <!--<br>-->
+        <!--&lt;!&ndash; The global progress bar &ndash;&gt;-->
+        <!--<div id="progress" class="progress">-->
+            <!--<div class="progress-bar progress-bar-success"></div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; The container for the uploaded files &ndash;&gt;-->
+        <!--<div id="files" class="files"></div>-->
+
+        <!--This is the BASIC PLUS UI for fileupload-->
+        <!--<div class="row fileupload-buttonbar">-->
+            <!--<div class="col-lg-7">-->
+                <!--&lt;!&ndash; The fileinput-button span is used to style the file input field as button &ndash;&gt;-->
+                <!--<span class="btn btn-success fileinput-button">-->
+                    <!--<i class="glyphicon glyphicon-plus"></i>-->
+                    <!--<span>Add files...</span>-->
+                    <!--<input type="file" name="files[]" multiple>-->
+                <!--</span>-->
+                <!--<button type="submit" class="btn btn-primary start">-->
+                    <!--<i class="glyphicon glyphicon-upload"></i>-->
+                    <!--<span>Start upload</span>-->
+                <!--</button>-->
+                <!--<button type="reset" class="btn btn-warning cancel">-->
+                    <!--<i class="glyphicon glyphicon-ban-circle"></i>-->
+                    <!--<span>Cancel upload</span>-->
+                <!--</button>-->
+                <!--<button type="button" class="btn btn-danger delete">-->
+                    <!--<i class="glyphicon glyphicon-trash"></i>-->
+                    <!--<span>Delete</span>-->
+                <!--</button>-->
+                <!--<input type="checkbox" class="toggle">-->
+                <!--&lt;!&ndash; The global file processing state &ndash;&gt;-->
+                <!--<span class="fileupload-process"></span>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; The global progress state &ndash;&gt;-->
+            <!--<div class="col-lg-5 fileupload-progress fade">-->
+                <!--&lt;!&ndash; The global progress bar &ndash;&gt;-->
+                <!--<div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">-->
+                    <!--<div class="progress-bar progress-bar-success" style="width:0%;"></div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash; The extended global progress state &ndash;&gt;-->
+                <!--<div class="progress-extended">&nbsp;</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; The table listing the files available for upload/download &ndash;&gt;-->
+        <!--<table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>-->
+
+        <div class="row hidden" id="td_panel" style="color:black;">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h4 style="margin-top:10px;margin-bottom:30px;">Step 3: Trigger/Driver Tagging Dictionary</h4>
+                            </div>
+                            <div class="col-lg-5"></div>
+                            <div class="col-lg-1">
+                                <span class="pull-right"><button id="btnNext2" type="button" name="next">Next</button></span>
+                            </div>
+                        </div>
+
+                        <div class="radiogroup">
+                            <input type="checkbox" name="opt2" value="upld" checked="true"/>
+                            <span style="padding-left:2px;"> Upload your own dictionary (deselect to use default dictionary)</span>
+                            <span style="padding-left:2px;color:blue;"> Don't forget to click on <b>Upload</b> button!</span>
+                        </div>
+
+                        <div class="row" id="td_upload">
+                            <div class="col-lg-12">
+                                <label class="control-label hidden">Select Dataset</label>{% csrf_token %}
+                                <input id="input-442" name="input442[]" type="file" multiple class="file-loading" >{% csrf_token %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!--td-panel-->
+        <p></p>
+        <div class="row hidden" id="data_panel" style="color:black;">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h4 style="margin-top:10px;margin-bottom:30px;">Step 4: Upload Dataset</h4>
+                            </div>
+                            <div class="col-lg-5"></div>
+                            <div class="col-lg-1">
+                                <span class="pull-right"><button id="btnStart" type="button" name="start" href="/">Start!</button></span>
+                            </div>
+                        </div>
+
+                        <div class="row" id="data_upload" style="padding:10px;">
+                            <!--<div class="col-lg-12">-->
+                                <label class="control-label hidden">Select Dataset</label>{% csrf_token %}
+                                <span style="padding-left:2px;color:blue;"> Don't forget to click on <b>Upload</b> button!</span>
+                                <input id="input-44" name="input44[]" type="file" multiple class="file-loading" >{% csrf_token %}
+                            <!--</div>-->
+                        <!--</div>-->
+                    </div><!--panel body -->
+                </div> <!-- panel default-->
+            </div> <!-- col-lg-12 -->
+        </div><!--data panel-->
+    </div>
+    <!--END PAGE CONTENT-->
+
+    <!--BEGIN FOOTER-->
+    <!--<div id="footer">
+        <div class="copyright">
+        </div>
+    </div>-->
+    <!--END FOOTER-->
+</div>
+    </div>
+
+{% endblock %}
+
+{% block imports %}
+    <script src="{% static 'atlas/script/url_utils.js' %}"></script>
+    <script src="{% static 'atlas/script/vendor/jsgrid.min.js' %}"></script>
+    <script src="{% static 'atlas/script/upload.js' %}"></script>
+
+    <!--<script src="http://d3js.org/d3.v3.min.js"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        d3.text("C:\\Users\\akshat.gupta\\PycharmProjects\\atlas\\mysite\\atlas\\database\\TaggingDicts\\sample_tagged_data.csv", function(data) {
+            var parsedCSV = d3.csv.parseRows(data);
+            console.log(parsedCSV);
+            var container = d3.select("#configTable")
+                .selectAll("tr")
+                    .data(parsedCSV).enter()
+                    .append("tr")
+
+                .selectAll("td")
+                    .data(function(d) { return d; }).enter()
+                    .append("td")
+                    .text(function(d) { return d; });
+            console.log('End of js');
+        });
+    </script>-->
+
+      <!--&lt;!&ndash; The template to display files available for upload &ndash;&gt;-->
+    <!--<script id="template-upload" type="text/x-tmpl">-->
+<!--{% for i in o.files  %}-->
+    <!--<tr class="template-upload fade">-->
+        <!--<td>-->
+            <!--<span class="preview"></span>-->
+        <!--</td>-->
+        <!--<td>-->
+            <!--<p class="name">{{ i.name }}</p>-->
+            <!--<strong class="error text-danger"></strong>-->
+        <!--</td>-->
+        <!--<td>-->
+            <!--<p class="size">Processing...</p>-->
+            <!--<div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar progress-bar-success" style="width:0%;"></div></div>-->
+        <!--</td>-->
+        <!--<td>-->
+            <!--{% if not i and not o.options.autoUpload  %}-->
+                <!--<button class="btn btn-primary start" disabled>-->
+                    <!--<i class="glyphicon glyphicon-upload"></i>-->
+                    <!--<span>Start</span>-->
+                <!--</button>-->
+            <!--{% endif %}-->
+            <!--{% if not i  %}-->
+                <!--<button class="btn btn-warning cancel">-->
+                    <!--<i class="glyphicon glyphicon-ban-circle"></i>-->
+                    <!--<span>Cancel</span>-->
+                <!--</button>-->
+            <!--{% endif %}-->
+        <!--</td>-->
+    <!--</tr>-->
+<!--{% endfor %}-->
+    <!--</script>-->
+
+{% endblock %}

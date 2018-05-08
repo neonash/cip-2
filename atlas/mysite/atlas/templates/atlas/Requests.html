@@ -1,0 +1,78 @@
+
+{% extends 'atlas/header.html' %}
+{% load staticfiles %}
+{% csrf_token %}
+
+{% block title %}CIP | My Requests{% endblock %}
+
+{% block content %}
+<div id="page-wrapper">
+    <!--BEGIN TITLE & BREADCRUMB PAGE-->
+    <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+        <div class="page-header pull-left">
+            <div class="page-title">My Requests</div>
+        </div>
+        <ol class="breadcrumb page-breadcrumb pull-right">
+            <li><i class="fa fa-home"></i>&nbsp;<a href="/home/">Home</a>&nbsp;&nbsp;</li>
+            <!--<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+            <li class="hidden"><a href="#">Dashboard</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+            <li class="active">Dashboard</li>-->
+        </ol>
+        <div class="clearfix"></div>
+    </div>
+    <!--END TITLE & BREADCRUMB PAGE-->
+
+    <!--BEGIN CONTENT-->
+    <div class="page-content">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-body" style="max-height: 300;overflow-y: scroll;">
+                        <h3>Requests Queue</h3>
+                            {% include "atlas/includes/Jsgrid.html" %}
+                        <p id="penReq">.</p>
+                    </div><!--END PANEL BODY -->
+                </div><!--END PANEL PANEL DEFAULT -->
+            </div><!--END COL-LG-12 -->
+        </div><!--END ROW -->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div id="newReq" class="panel-body">
+                        <h3>New Requests</h3>
+                        <hr>
+
+                        <div class="row">
+                            
+                            <div class="col-lg-8">
+                                 <h4>Enter keywords separated by comma (,): &nbsp; <input type="text" name="reqKW" id="reqKW"/></h4>
+                            </div>
+                            <div class="col-lg-2">
+                                <button type="button" class="btn btn-default btn-sm" id="reqBtn">Submit</button></div>
+                            <div class="col-lg-2"></div>
+                        </div>
+                    </div><!--END PANEL BODY -->
+                </div><!--END PANEL PANEL DEFAULT -->
+            </div><!--END COL-LG-12 -->
+        </div><!--END ROW -->
+        
+
+    </div>
+    <!--END CONTENT-->
+
+    <!--BEGIN FOOTER-->
+    <!--<div id="footer">
+        <div class="copyright">
+        </div>
+    </div>-->
+    <!--END FOOTER-->
+</div>
+<!--END PAGE WRAPPER-->
+{% endblock %}
+
+{% block imports %}
+    <script src="{% static 'atlas/script/vendor/jsgrid.min.js' %}"></script>
+    <script src="{% static 'atlas/script/url_utils.js' %}"></script>
+    <script src="{% static 'atlas/script/request.js' %}"></script>
+{% endblock %}
