@@ -67,6 +67,16 @@ def clustering(request):
     return render(request, 'atlas/Clustering.html')
 
 
+def pivot(request):
+    #query = request.GET['request']
+    return render(request, 'atlas/Pivot.html')
+
+
+def association(request):
+    #query = request.GET['request']
+    return render(request, 'atlas/Association.html')
+
+
 def comparison(request):
     #query = request.GET['request']
     return render(request, 'atlas/Comparison.html')

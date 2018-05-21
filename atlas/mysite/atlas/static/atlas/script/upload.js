@@ -1,5 +1,5 @@
 (function(){
-    console.log("LOADING UPLOAD JS")
+    console.log("LOADING UPLOAD JS");
     //$('#helpbox').hide();
 
 
@@ -165,29 +165,108 @@
 
         });
 
+        $('#btnBack0').on("click", function(){
 
-        $('#btnNext1').on("click", function(){
-//        console.log("inside button click 1");
-            $('#td_panel').removeClass('hidden');
+            $('#tag_panel').removeClass('hidden');
             $('#sd_panel').addClass('hidden');
         });
 
-        $('#btnNext2').on("click", function(){
-//                console.log("inside button click 2");
+        $('#btnNext1').on("click", function(){
+            if(document.getElementsByName('opt1')[0].checked){
+                var x = document.getElementsByClassName("file-upload-indicator");
+                try{
+                    if(x[2].title == "Uploaded" ) {
+    //                    alert(x[0].title);
+                        //call_readdims();
+                       $('#td_panel').removeClass('hidden');
+                        $('#sd_panel').addClass('hidden');
+                    }
 
-            $('#data_panel').removeClass('hidden');
-            $('#td_panel').addClass('hidden');
+                    else {
+                        alert("Please upload a file first!");
+                    }
+                }
+                catch(err){
+                alert("Please upload a file first!");
+                }
+            }
+            else{
+                $('#td_panel').removeClass('hidden');
+                $('#sd_panel').addClass('hidden');
+            }
         });
 
+        $('#btnBack1').on("click", function(){
+
+            $('#sd_panel').removeClass('hidden');
+            $('#td_panel').addClass('hidden');
+
+        });
+
+        $('#btnNext2').on("click", function(){
+
+             if(document.getElementsByName('opt2')[0].checked){
+                var x = document.getElementsByClassName("file-upload-indicator");
+                var x1 = 4;
+                while(x1 >= 2){
+                    try{
+                        if(x[x1].title == "Uploaded" ) {
+        //                    alert(x[0].title);
+                            //call_readdims();
+                           $('#data_panel').removeClass('hidden');
+                            $('#td_panel').addClass('hidden');
+                        }
+
+                        else {
+                            alert("Please upload a file first!");
+                        }
+                        break;
+                    }
+                    catch(err){
+                        x1 = 2
+                    }
+                }
+            }
+            else{
+                $('#data_panel').removeClass('hidden');
+                $('#td_panel').addClass('hidden');
+            }
+        });
+
+        $('#btnBack2').on("click", function(){
+
+            $('#td_panel').removeClass('hidden');
+            $('#data_panel').addClass('hidden');
+
+        });
+
+
         $('#btnStart').on("click", function(){
-            alert("Analysis initiated. You can track the progress as listed on the home page.");
-            $.get('/service/start/').then(function (successResponse) {
-                console.log('Parsed successResponse', JSON.parse(successResponse));
-            }, function (errorResponse) {
-                    console.log("errorResponse", errorResponse)
-            });
-            //window.location("127.0.0.1:8000/");
-            location.href = "/";
+            var x = document.getElementsByClassName("file-upload-indicator");
+            var x1 = 6;
+            while(x1 >= 2){
+                try{
+                    if(x[x1].title == "Uploaded" ) {
+    //                   alert("Analysis initiated. You can track the progress as listed on the home page.");
+                        $.get('/service/start/').then(function (successResponse) {
+                            console.log('Parsed successResponse', JSON.parse(successResponse));
+                        }, function (errorResponse) {
+                                console.log("errorResponse", errorResponse);
+                        });
+
+                        location.href = "/";
+                    }
+
+                    else {
+                        alert("Please upload a file first!");
+                    }
+                    break;
+                }
+                catch(err){
+                    x1 -= 2;
+                }
+            }
+
         });
 
         $('#help').click(function(){

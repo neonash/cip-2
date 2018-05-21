@@ -53,6 +53,10 @@ urlpatterns = [
     url(r'^analysis_chart4/$', analysis.getChart4Data),
     url(r'^analysis_common_driv_chart/$', analysis.getCommonDrivChartData),
     url(r'^analysis_common_senti_chart/$', analysis.getCommonSentiChartData),
-#    url(r'^carrot_clustering/$', clustering.getData),
+    #    url(r'^carrot_clustering/$', clustering.getData),
+    url(r'^pivotparser/$', summary.getPivotdata),
+    url(r'^assoc_dims/$', summary.getAssocDims),
+    url(r'^assoc_levels/$', summary.getAssocLevels),
+    url(r'^association/$', summary.getAssociationMapdata),
 ]
 

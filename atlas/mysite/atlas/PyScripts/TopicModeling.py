@@ -18,8 +18,8 @@ import traceback
 from atlas.config import dbConfig
 
 
-logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', \
-                    level=logging.INFO)
+#logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', \
+  #                  level=logging.INFO)
 
 
 def id2word(dictionary):
@@ -95,7 +95,7 @@ def main(request, num_topics):
         if True:
             #logging.warn("No saved models available. Generating corpus. This might take a while...")
             print("No saved models available. Generating corpus. This might take a while...")
-            #logging.info("Loading data from text file")
+
             if is_csv == 0:
                 filename = dbConfig.dict['outputUrl']
                 chunksize = 10 ** 5

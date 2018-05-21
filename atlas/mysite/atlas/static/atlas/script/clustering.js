@@ -4,10 +4,12 @@
     $('#parent').addClass('active');
     //console.log(window.location.href)
     var request = window.urlUtils.getQueryParameter(window.location.href, 'request');
-    $('#analysis a').attr('href', '/analysis/?request=' + encodeURI(request))
-    $('#requestTopic a').attr('href', '/topicmodeling/?request='+ encodeURI(request))
-    $('#clustering a').attr('href','/clustering/?request=' + encodeURI(request))
-    $('#comparison a').attr('href','/compare/?request=' + encodeURI(request))
+    $('#analysis a').attr('href', '/analysis/?request=' + encodeURI(request));
+    $('#requestTopic a').attr('href', '/topicmodeling/?request='+ encodeURI(request));
+    $('#clustering a').attr('href','/clustering/?request=' + encodeURI(request));
+    $('#pivot a').attr('href','/pivot/?request=' + encodeURI(request));
+    $('#association a').attr('href','/association/?request=' + encodeURI(request));
+    $('#comparison a').attr('href','/compare/?request=' + encodeURI(request));
 
 
     var foamtree = new CarrotSearchFoamTree({

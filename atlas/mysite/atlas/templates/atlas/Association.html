@@ -1,0 +1,107 @@
+{% extends 'atlas/header.html' %}
+
+{% load staticfiles %}
+{% block title %} CIP -  Consumer Insights Platform | Association {% endblock %}
+
+{% block content %}
+{% verbatim %}
+
+<div id="page-wrapper">
+    <!--BEGIN TITLE & BREADCRUMB PAGE-->
+    <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+        <div class="page-header pull-left col-lg-6">
+            <div class="page-title">Brand Association Map<a class="btn btn-default btn-sm" data-toggle="modal" data-target="#helpModal" title="More info" style="border:0px;background:transparent;"><span class="glyphicon glyphicon-info-sign"></span></a></div>
+            <!-- Modal -->
+                <div id="helpModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                      <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">How to use Association Maps</h4>
+                      </div>
+                      <div class="modal-body">
+                        <ul>
+                            <li>This radar chart is used to understand the association of different brands in the dataset with various dimensions and their respective levels.</li>
+                            <li>Hover over the data points to know how strongly the brand is associated with the level in that dimension</li>
+                        </ul>
+                      </div>
+                      <!--<div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>-->
+                    </div>
+
+                  </div>
+                </div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+    <!--END TITLE & BREADCRUMB PAGE-->
+
+    <!--BEGIN CONTENT-->
+    <div class="page-content">
+        <div class="row">
+        <div class="col-lg-12" >
+                <div class="col-lg-6">
+                    <label for="dims">Choose the dimension:</label>
+
+                    <select id="dims" class="selectpicker" data-actions-box="true"  >  <!-- data-live-search="true" -->
+                        <option>Loading...</option>
+                    </select>
+                </div>
+                <div class="col-lg-6">
+                    <label for="levs">Choose the level:</label>
+
+                    <select id="levs" class="selectpicker" data-actions-box="true"  >  <!-- data-live-search="true" -->
+                        <option>Loading...</option>
+                    </select>
+                </div>
+        </div>
+        </div>
+
+    <div class="content-wrapper" id="chartArea" style="display: none;">
+        <div class ="row">
+            <div class="col-lg-12 col-md-12" >
+                <br/>
+                <br/>
+                <!--<div class="portlet box">-->
+                    <div class="portlet-body" style="width: 100%;">
+                        <div id="output" style="margin: 30px;"></div>
+                    </div>
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+    <div class="content-wrapper" id="chartArea1">
+        <div class ="row">
+            <div class="col-lg-12 col-md-12" >
+                <br/>
+                <br/>
+                <!--<div class="portlet box">-->
+                    <div class="portlet-body" style="width: 100%;">
+                        <div id="chartjs-radar">
+                            <canvas id="marksChart" width="600" height="400"></canvas>
+                        </div>
+                    </div>
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+
+{% endverbatim %}
+{% endblock %}
+
+{% block imports %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+	<script type="text/javascript" src="http://mpld3.github.io/js/mpld3.v0.2.js"></script>
+    <script src="{% static 'atlas/script/url_utils.js' %}"></script>
+    <!--<script src="{% static 'atlas/script/clustering.js' %}" type="text/javascript" ></script>-->
+    <script src="{% static 'atlas/script/association.js' %}" type="text/javascript" ></script>
+
+{% endblock %}

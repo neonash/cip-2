@@ -31,6 +31,36 @@ def getTopposnegData(request):
                                        json.loads(sku), json.loads(fromDate), json.loads(toDate))), status=200)
 
 
+def getPivotdata(request):
+    kw = request.GET['query']
+    if "." in kw:
+        kw = str(kw).split(".")[0]
+    return HttpResponse((summary_service.getPivotcontent(kw)), status=200)
+
+
+def getAssocDims(request):
+    kw = request.GET['query']
+    print kw
+    if "." in kw:
+        kw = str(kw).split(".")[0]
+    return HttpResponse((summary_service.getAssocDims(kw)), status=200)
+
+
+def getAssocLevels(request):
+    kw = request.GET['query']
+    dim = request.GET['dim']
+    print kw
+    if "." in kw:
+        kw = str(kw).split(".")[0]
+    return HttpResponse((summary_service.getAssocLevels(kw, dim)), status=200)
+
+
+def getAssociationMapdata(request):
+    kw = request.GET['query']
+    dim = request.GET['dim']
+    return HttpResponse((summary_service.getAssociationdata(kw, dim)), status=200)
+
+
 def getTopposnegOverallData(request):
     kw = request.GET['query']
     return HttpResponse(summary_service.getTopposnegOverall(kw), status=200)

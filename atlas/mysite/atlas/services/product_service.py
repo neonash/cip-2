@@ -104,7 +104,7 @@ def uploadFile(request):
 
     ids = ['input440[]', 'input441[]', 'input442[]', 'input44[]']
 
-    # table_data_df = pd.DataFrame({'dimensions': [' '], 'levels': [' ']}, index=None)
+    # table_data_df = pd.DataFrame({'dimension': [' '], 'levels': [' ']}, index=None)
 
     for i in ids:
         # print(i)
@@ -128,7 +128,7 @@ def uploadFile(request):
                     if i == 'input440[]':
                         print("inside if input440")
                         target = dbConfig.dict['tagDictPath'] + filedata._name
-                        #print(target)
+                        print(target)
 
                         full_data_dict['tag_dict'] = target
                         with file(target, 'w') as outfile:
@@ -139,7 +139,8 @@ def uploadFile(request):
                         print("tag dict uploaded")
                         tagdict_flag = True
                         # ###################### readdims() start
-                        #final_list = read_dims(request)
+                        final_list = read_dims(request)
+                        print(final_list)
                         # ######################################
 
                         break
@@ -210,15 +211,17 @@ def uploadFile(request):
     #task1.pool_exe_file(filedata._name, data_df)
     #task1.pool_exe_file(full_data_dict)
 
-    #if tagdict_flag:
+    # if tagdict_flag:
     return responseObject
     # else:
-    #    return responseObject
-    # return [responseObject, table_data_df['dimensions'].tolist(),table_data_df['levels'].tolist()]
+    #     return [responseObject, table_data_df['dimension'].tolist(),table_data_df['levels'].tolist()]
 
 
 def start_analysis():
     global full_data_dict
+
+    # insert tagging dict, its dimension mapping and dataset into database
+
 
     responseObject = {}
     print("calling task1")
@@ -243,7 +246,7 @@ def read_dims(request):
     # print (type(a))
     # print dir(request)
 
-    table_data_df = pd.DataFrame({'dimensions': [' '],
+    table_data_df = pd.DataFrame({'dimension': [' '],
                                   'level1': [' '],
                                   'level2': [' '],
                                   'level3': [' '],
@@ -267,59 +270,52 @@ def read_dims(request):
         # to extract dimensions and levels from uploaded dict >>>
         # for loop starting from 2 to avoid first col ('n gram'), looping till last but one element
 
-        last_dim_idx = 0  # last idx of headers_list traversed
-        # h2 = last_dim_idx + 1
-        last_idx_checked = False
-        while last_dim_idx < len(headers_list) and h2 <= len(headers_list) and not last_idx_checked:
-            # list entry = [curr dimension, < levels within it >]
-            list_entry = [headers_list[last_dim_idx]]
-            # > using extend instead of append
+        table_data_df = pd.DataFrame({'dimension': [' '],
+                                      'level1': [' '],
+                                      'level2': [' '],
+                                      'level3': [' '],
+                                      'level4': [' '],
+                                      'level5': [' ']}, index=None)
+        i = 0
+        j = i + 1
+        list_entry = [headers_list[i]]
+        while j < len(headers_list):
+            if "_" in headers_list[j]:
+                lvl = str(headers_list[j]).split("_")[1]
+                list_entry.append(lvl)
+                if j == len(headers_list) - 1:  # if last item is a level, save list entry
+                    while len(list_entry) < 6:
+                        list_entry.append("#N/A")
+                    #print(list_entry)
+                    table_data_df.loc[len(table_data_df)] = list_entry
+                j += 1
+            else:
+                # store previous entry
+                while len(list_entry) < 6:
+                    list_entry.append("#N/A")
+                #print(list_entry)
+                table_data_df.loc[len(table_data_df)] = list_entry
 
-            is_next_dim = False
-            # if last_dim_idx == len(headers_list) - 1:
-            #     # last item in headerlist is a dimension by itself
-            #     while len(list_entry) < 6:
-            #         list_entry.append("#N/A")
-            #     #print(list_entry)
-            #     table_data_df.loc[len(table_data_df)] = list_entry
-            #     break
-            # else:
-            h2 = last_dim_idx + 1  # loop till (len(headers_list) - 1) (equiv to inner for loop), starting from idx 2 to compare with idx 1
-            if h2 == len(headers_list):
-                last_idx_checked = True
+                # create new entry
+                dim = headers_list[j]
+                i = j
+                list_entry = [dim]
+                j = i + 1
+                if j == len(headers_list):  # if last item is a dimension, save list entry
+                    while len(list_entry) < 6:
+                        list_entry.append("#N/A")
+                    #print(list_entry)
+                    table_data_df.loc[len(table_data_df)] = list_entry
 
-            while h2 < len(headers_list) and not is_next_dim and not last_idx_checked:
-
-                # if next header has _, then it is a level of the prev dim, otherwise new (next) dimension
-                if "_" in headers_list[h2]:
-                    is_next_dim = False
-                    list_entry.append(str(headers_list[h2]).split("_")[1])  # [t1, t2]
-
-                elif h2 == last_dim_idx:
-                    break
-
-                else:
-                    last_dim_idx = h2
-                    is_next_dim = True
-
-                h2 += 1
-
-            # temp_var = ','.join(list_entry[1])
-            # del list_entry[1]
-            # list_entry.append(temp_var)
-            while len(list_entry) < 6:
-                list_entry.append("#N/A")
-            print(list_entry)
-            table_data_df.loc[len(table_data_df)] = list_entry
-        print(table_data_df)
+            #print(table_data_df)
 
     except:
         print "Exception caught while extracting dimensions"
         print traceback.print_exc()
 
-    final_list = [table_data_df['dimensions'].tolist(), table_data_df['level1'].tolist(),
+    final_list = [table_data_df['dimension'].tolist(), table_data_df['level1'].tolist(),
                   table_data_df['level2'].tolist(), table_data_df['level3'].tolist(),
                   table_data_df['level4'].tolist(), table_data_df['level5'].tolist()]
 
     return final_list
-    # return [responseObject, table_data_df['dimensions'].tolist(),table_data_df['levels'].tolist()]
+    # return [responseObject, table_data_df['dimension'].tolist(),table_data_df['levels'].tolist()]

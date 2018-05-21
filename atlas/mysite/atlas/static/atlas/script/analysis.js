@@ -23,6 +23,8 @@
     $('#analysis a').attr('href', '/analysis/?request='+ encodeURI(query));
     $('#requestTopic a').attr('href', '/topicmodeling/?request='+ encodeURI(query));
     $('#clustering a').attr('href', '/clustering/?request='+ encodeURI(query));
+    $('#pivot a').attr('href','/pivot/?request=' + encodeURI(query));
+    $('#association a').attr('href','/association/?request=' + encodeURI(query));
     //$('#comparison a').attr('href', '/compare/?request='+ encodeURI(query));
 
     if(flag == true){
@@ -484,6 +486,9 @@ function load_chart2() {
                             text: 'Triggers of Purchase',
                             //style: { fontSize: '12px' },
                         },
+                        subtitle: {
+                        text: 'Click the highlighted labels to view sub-triggers '
+                    },
                         plotOptions: {
                             pie:{
                                 dataLabels: {
@@ -539,6 +544,9 @@ function load_chart2() {
                             text: 'Triggers of Purchase',
                             //style: { fontSize: '12px' },
                         },
+                        subtitle: {
+                        text: 'Click the highlighted labels to view sub-triggers '
+                    },
                         plotOptions: {
                             pie:{
                                 dataLabels: {
@@ -641,6 +649,9 @@ function load_chart4() {
                             text: 'Drivers of Purchase',
                             //style: { fontSize: '12px' },
                         },
+                        subtitle: {
+                        text: 'Click the highlighted labels to view sub-drivers '
+                    },
                         plotOptions: {
                             pie:{
                                 dataLabels: {
@@ -695,6 +706,9 @@ function load_chart4() {
                             text: 'Drivers of Purchase',
                             //style: { fontSize: '12px' },
                         },
+                        subtitle: {
+                        text: 'Click the highlighted labels to view subdrivers '
+                    },
                         plotOptions: {
                             pie:{
                                 dataLabels: {

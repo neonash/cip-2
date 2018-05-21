@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61fc945b-42ef-496f-aead-88dd149fead4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/atlas/services/product_service.py" afterPath="$PROJECT_DIR$/mysite/atlas/services/product_service.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/mysite/settings.py" afterPath="$PROJECT_DIR$/mysite/mysite/settings.py" />
-    </list>
+    <list default="true" id="61fc945b-42ef-496f-aead-88dd149fead4" name="Default" comment="" />
     <ignored path="django-atlas.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -25,63 +22,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="product_service.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/atlas/services/product_service.py">
+      <file leaf-file-name="summary_service.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/atlas/services/summary_service.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            <state relative-caret-position="255">
+              <caret line="680" column="17" selection-start-line="680" selection-start-column="17" selection-end-line="680" selection-end-column="17" />
               <folding>
-                <element signature="e#0#36#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Search.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/atlas/templates/atlas/Search.html">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mysite/mysite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Jsgrid.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/atlas/templates/atlas/includes/Jsgrid.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Topic.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/atlas/templates/atlas/Topic.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="service_urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/atlas/urls/service_urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dbConfig.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mysite/atlas/config/dbConfig.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            <state relative-caret-position="254">
+              <caret line="93" column="31" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -90,38 +47,45 @@
       <file leaf-file-name="summary.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/atlas/summary.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="867">
+              <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+              <folding>
+                <marker date="1526893999530" expanded="false" signature="0:127" placeholder="import ..." />
+                <marker date="1526893999530" expanded="true" signature="164:578" placeholder="..." />
+                <marker date="1526893999530" expanded="true" signature="622:733" placeholder="..." />
+                <marker date="1526893999530" expanded="true" signature="766:1176" placeholder="..." />
+                <marker date="1526893999530" expanded="true" signature="2015:2122" placeholder="..." />
+                <marker date="1526893999530" expanded="true" signature="2153:2251" placeholder="..." />
+                <marker date="1526893999530" expanded="true" signature="2283:2468" placeholder="..." />
+                <marker date="1526893999530" expanded="true" signature="2504:2587" placeholder="..." />
+                <marker date="1526893999530" expanded="true" signature="2616:2819" placeholder="..." />
+                <marker date="1526893999530" expanded="true" signature="2849:3256" placeholder="..." />
+                <marker date="1526893999530" expanded="true" signature="3302:3459" placeholder="..." />
+                <marker date="1526893999530" expanded="true" signature="3462:3921" placeholder="..." />
+                <marker date="1526893999530" expanded="true" signature="3951:4366" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="summary_service.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/atlas/services/summary_service.py">
+      <file leaf-file-name="service_urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/atlas/urls/service_urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="952">
+              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+              <folding>
+                <marker date="1526893927719" expanded="false" signature="640:744" placeholder="import ..." />
+                <marker date="1526893927719" expanded="true" signature="762:2991" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/atlas/static/atlas/script/search.js">
+      <file leaf-file-name="brand_summary.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/atlas/static/atlas/script/brand_summary.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/atlas/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1887">
-              <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+            <state relative-caret-position="5372">
+              <caret line="319" column="0" selection-start-line="319" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -142,23 +106,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mysite/atlas/urls/view_urls.py" />
-        <option value="$PROJECT_DIR$/mysite/atlas/static/atlas/script/topicmodeling.js" />
-        <option value="$PROJECT_DIR$/mysite/atlas/static/atlas/script/clustering.js" />
-        <option value="$PROJECT_DIR$/mysite/atlas/analysis.py" />
         <option value="$PROJECT_DIR$/mysite/atlas/urls/url_mounts.py" />
         <option value="$PROJECT_DIR$/mysite/atlas/templates/comparison/reviews.html" />
         <option value="$PROJECT_DIR$/mysite/atlas/templates/comparison/product-tabs.html" />
         <option value="$PROJECT_DIR$/mysite/atlas/static/atlas/script/products.js" />
         <option value="$PROJECT_DIR$/mysite/atlas/templates/atlas/Comparison.html" />
         <option value="$PROJECT_DIR$/mysite/atlas/static/atlas/styles/comparison-style.css" />
-        <option value="$PROJECT_DIR$/mysite/atlas/static/atlas/script/analysis.js" />
         <option value="$PROJECT_DIR$/mysite/atlas/static/atlas/script/comparison-app.js" />
         <option value="$PROJECT_DIR$/mysite/atlas/static/atlas/script/comparison.js" />
-        <option value="$PROJECT_DIR$/mysite/atlas/models.py" />
         <option value="$PROJECT_DIR$/mysite/atlas/templates/atlas/Clustering.html" />
-        <option value="$PROJECT_DIR$/mysite/atlas/static/atlas/script/app1.js" />
-        <option value="$PROJECT_DIR$/mysite/atlas/static/atlas/script/search.js" />
         <option value="$PROJECT_DIR$/mysite/atlas/PyScripts/SentimentAnalysis_2.py" />
         <option value="$PROJECT_DIR$/mysite/atlas/PyScripts/TrigDriv_2.py" />
         <option value="$PROJECT_DIR$/mysite/atlas/PyScripts/Walmart.py" />
@@ -167,26 +123,40 @@
         <option value="$PROJECT_DIR$/mysite/atlas/PyScripts/SentimentAPI_2.py" />
         <option value="$PROJECT_DIR$/mysite/atlas/templates/atlas/home.html" />
         <option value="$PROJECT_DIR$/mysite/atlas/PyScripts/uwsgi-test.py" />
-        <option value="$PROJECT_DIR$/mysite/atlas/templates/atlas/Summary.html" />
-        <option value="$PROJECT_DIR$/mysite/atlas/static/atlas/script/brand_summary.js" />
-        <option value="$PROJECT_DIR$/mysite/atlas/PyScripts/NgramMapping.py" />
-        <option value="$PROJECT_DIR$/mysite/atlas/PyScripts/TopicModeling.py" />
-        <option value="$PROJECT_DIR$/mysite/atlas/PyScripts/task1.py" />
-        <option value="$PROJECT_DIR$/mysite/atlas/urls/service_urls.py" />
-        <option value="$PROJECT_DIR$/mysite/atlas/views.py" />
         <option value="$PROJECT_DIR$/mysite/atlas/templates/registration/login.html" />
-        <option value="$PROJECT_DIR$/mysite/atlas/templates/atlas/header.html" />
-        <option value="$PROJECT_DIR$/mysite/atlas/templates/atlas/Upload.html" />
-        <option value="$PROJECT_DIR$/mysite/atlas/static/atlas/script/upload.js" />
-        <option value="$PROJECT_DIR$/mysite/atlas/database/request.csv" />
-        <option value="$PROJECT_DIR$/mysite/atlas/PyScripts/ATLAS1.py" />
         <option value="$PROJECT_DIR$/mysite/mysite/wsgi.py" />
         <option value="$PROJECT_DIR$/mysite/atlas/templates/atlas/Topic.html" />
-        <option value="$PROJECT_DIR$/mysite/mysite/settings.py" />
-        <option value="$PROJECT_DIR$/mysite/atlas/services/summary_service.py" />
+        <option value="$PROJECT_DIR$/mysite/atlas/templates/atlas/includes/error.html" />
         <option value="$PROJECT_DIR$/mysite/atlas/templates/atlas/Search.html" />
+        <option value="$PROJECT_DIR$/mysite/atlas/templates/registration/signup.html" />
+        <option value="$PROJECT_DIR$/mysite/atlas/static/atlas/script/upload.js" />
+        <option value="$PROJECT_DIR$/mysite/atlas/PyScripts/TopicModeling.py" />
+        <option value="$PROJECT_DIR$/mysite/atlas/templates/atlas/Upload.html" />
+        <option value="$PROJECT_DIR$/mysite/atlas/models.py" />
+        <option value="$PROJECT_DIR$/mysite/atlas/PyScripts/task1.py" />
         <option value="$PROJECT_DIR$/mysite/atlas/services/product_service.py" />
+        <option value="$PROJECT_DIR$/mysite/atlas/views.py" />
+        <option value="$PROJECT_DIR$/mysite/atlas/urls/view_urls.py" />
         <option value="$PROJECT_DIR$/mysite/atlas/config/dbConfig.py" />
+        <option value="$PROJECT_DIR$/mysite/atlas/templates/atlas/header.html" />
+        <option value="$PROJECT_DIR$/mysite/atlas/PyScripts/NgramMapping.py" />
+        <option value="$PROJECT_DIR$/mysite/atlas/database/request.csv" />
+        <option value="$PROJECT_DIR$/mysite/atlas/static/atlas/script/clustering.js" />
+        <option value="$PROJECT_DIR$/mysite/atlas/static/atlas/script/app1.js" />
+        <option value="$PROJECT_DIR$/mysite/atlas/static/atlas/script/topicmodeling.js" />
+        <option value="$PROJECT_DIR$/mysite/atlas/static/atlas/script/search.js" />
+        <option value="$PROJECT_DIR$/mysite/atlas/static/atlas/script/brand_summary.js" />
+        <option value="$PROJECT_DIR$/mysite/atlas/static/atlas/script/analysis.js" />
+        <option value="$PROJECT_DIR$/mysite/atlas/static/atlas/script/pivotgrid.js" />
+        <option value="$PROJECT_DIR$/mysite/atlas/PyScripts/ATLAS1.py" />
+        <option value="$PROJECT_DIR$/mysite/atlas/templates/atlas/Pivot.html" />
+        <option value="$PROJECT_DIR$/mysite/atlas/templates/atlas/Association.html" />
+        <option value="$PROJECT_DIR$/mysite/atlas/templates/atlas/Summary.html" />
+        <option value="$PROJECT_DIR$/mysite/atlas/urls/service_urls.py" />
+        <option value="$PROJECT_DIR$/mysite/atlas/summary.py" />
+        <option value="$PROJECT_DIR$/mysite/atlas/static/atlas/script/association.js" />
+        <option value="$PROJECT_DIR$/mysite/atlas/services/summary_service.py" />
+        <option value="$PROJECT_DIR$/mysite/mysite/settings.py" />
       </list>
     </option>
   </component>
@@ -221,6 +191,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -243,15 +215,101 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atlas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="sea&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/search.js&#10;jsgr&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/includes/Jsgrid.html&#10;sear&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/Search.html&#10;pro&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/services/product_service.py&#10;view&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/views.py&#10;serv&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/urls/service_urls.py&#10;searc&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/search.js&#10;summ&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/services/summary_service.py&#10;prod&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/services/product_service.py&#10;sett&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/mysite/settings.py&#10;dbcon&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/config/dbConfig.py&#10;login&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/registration/login.html&#10;url&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/url_utils.js&#10;views&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/views.py&#10;top&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/topicmodeling.js&#10;topi&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/Topic.html&#10;settings&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/mysite/settings.py&#10;search&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/Search.html&#10;js&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/includes/Jsgrid.html&#10;re&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/database/request.csv&#10;models&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/models.py&#10;db&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/config/dbConfig.py&#10;header&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/header.html&#10;erv&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/urls/service_urls.py&#10;dbc&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/config/dbConfig.py&#10;topic&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/PyScripts/TopicModeling.py&#10;settin&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/mysite/settings.py&#10;su&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/Summary.html&#10;atlas&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/PyScripts/ATLAS1.py&#10;task&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/PyScripts/task1.py&#10;servi&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/urls/service_urls.py&#10;upload&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/upload.js&#10;analys&#9;null&#9;null&#10;sent&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/PyScripts/SentimentAnalysis_2.py&#10;setting&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/mysite/settings.py&#10;urls.py&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/mysite/urls.py&#10;home&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/home.html&#10;jsgrid.ht&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/includes/Jsgrid.html&#10;upl&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/upload.js&#10;uplo&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/Upload.html&#10;tas&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/PyScripts/task1.py&#10;mana&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/manage.py&#10;man&#9;null&#9;null&#10;trig&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/PyScripts/TrigDriv_2.py&#10;sentim&#9;null&#9;null&#10;head&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/header.html&#10;heade&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/header.html&#10;uploa&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/upload.js&#10;ser&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/urls/service_urls.py&#10;app1&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/app1.js" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../atlas - Copy" />
+    <property name="SearchEverywhereHistoryKey" value="set&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/CIP - Git/atlas/mysite/mysite/settings.py&#10;bra&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/brand_summary.js&#10;summ&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/Summary.html&#10;asso&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/association.js&#10;pi&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/Pivot.html&#10;at&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/PyScripts/ATLAS1.py&#10;associa&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/Association.html&#10;view&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/urls/view_urls.py&#10;piv&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/Pivot.html&#10;serv&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/urls/service_urls.py&#10;bran&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/brand_summary.js&#10;sett&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/mysite/settings.py&#10;an&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/analysis.js&#10;ana&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/Analysis.html&#10;br&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/brand_summary.js&#10;clu&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/clustering.js&#10;app&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/app1.js&#10;top&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/topicmodeling.js&#10;sea&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/search.js&#10;head&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/header.html&#10;sear&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/Search.html&#10;ass&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/association.js&#10;ng&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/PyScripts/NgramMapping.py&#10;atl&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/PyScripts/ATLAS1.py&#10;sum&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/summary.py&#10;header&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/header.html&#10;pivot&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/Pivot.html&#10;settin&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/mysite/settings.py&#10;db&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/config/dbConfig.py&#10;se&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/urls/service_urls.py&#10;heade&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/header.html&#10;dbco&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/config/dbConfig.py&#10;ngra&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/PyScripts/NgramMapping.py&#10;upload&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/Upload.html&#10;topic&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/PyScripts/TopicModeling.py&#10;senti&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/PyScripts/SentimentAnalysis.py&#10;uplo&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/upload.js&#10;model&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/models.py&#10;topi&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/PyScripts/TopicModeling.py&#10;searc&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/search.js&#10;atlas&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/PyScripts/ATLAS1.py&#10;task1&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/PyScripts/task1.py&#10;views&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/views.py&#10;prod&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/services/product_service.py&#10;error&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/includes/error.html&#10;jsgr&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/atlas/includes/Jsgrid.html&#10;pro&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/services/product_service.py&#10;dbcon&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/config/dbConfig.py&#10;login&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/templates/registration/login.html&#10;url&#9;FILE&#9;file://C:/Users/akshat.gupta/PycharmProjects/atlas/mysite/atlas/static/atlas/script/url_utils.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CIP - Git/atlas" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
@@ -461,26 +519,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23586309" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16071428" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38235295" sideWeight="0.4233631" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32789558" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41830066" sideWeight="0.42708334" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43954247" sideWeight="0.4969743" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29200652" sideWeight="0.63095236" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.49702382" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3496732" sideWeight="0.5766369" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31699347" sideWeight="0.5729167" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.49702382" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32789558" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -537,98 +595,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/PyScripts/SentimentAPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/PyScripts/SentimentAPI_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/PyScripts/SentimentAPI_generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/PyScripts/task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/PyScripts/TrigDriv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/PyScripts/TrigDriv_2_CSV.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/PyScripts/Walmart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/clustering.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/static/atlas/script/app1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1377">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/static/atlas/styles/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="609" column="538" selection-start-line="609" selection-start-column="529" selection-end-line="609" selection-end-column="538" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/core-scripting.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/PyScripts/TrigDriv_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2142">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/database/ATLAS_Universal_2.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3631661">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -671,39 +637,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/PyScripts/SentimentAnalysis_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2788">
-          <caret line="164" column="54" selection-start-line="164" selection-start-column="54" selection-end-line="164" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/atlas/services/analysis_service.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/static/atlas/script/brand_summary.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="907" column="39" selection-start-line="907" selection-start-column="39" selection-end-line="907" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/templates/atlas/Summary.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2176">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/PyScripts/SentimentAnalysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -714,102 +651,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/PyScripts/NgramMapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/PyScripts/task1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3349">
-          <caret line="198" column="5" selection-start-line="198" selection-start-column="5" selection-end-line="198" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/templates/atlas/Clustering.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/templates/atlas/Upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="226" column="113" selection-start-line="226" selection-start-column="113" selection-end-line="226" selection-end-column="113" />
-          <folding>
-            <marker date="1525349051717" expanded="true" signature="193:13384" placeholder="..." />
-            <marker date="1525349051717" expanded="true" signature="715:13373" placeholder="..." />
-            <marker date="1525349051717" expanded="true" signature="11766:13204" placeholder="..." />
-            <marker date="1525349051717" expanded="true" signature="11802:13176" placeholder="..." />
-            <marker date="1525349051717" expanded="true" signature="11852:13142" placeholder="..." />
-            <marker date="1525349051717" expanded="true" signature="11897:13101" placeholder="..." />
-            <marker date="1525349051717" expanded="true" signature="11939:12445" placeholder="..." />
-            <marker date="1525349051717" expanded="true" signature="12241:12414" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/static/atlas/script/upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="189" column="32" selection-start-line="189" selection-start-column="32" selection-end-line="189" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="72" column="62" selection-start-line="72" selection-start-column="62" selection-end-line="72" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/database/request.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/PyScripts/TopicModeling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="96" column="92" selection-start-line="96" selection-start-column="92" selection-end-line="96" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/PyScripts/ATLAS1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="417" column="45" selection-start-line="417" selection-start-column="45" selection-end-line="417" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/mysite/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/templates/atlas/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1319">
-          <caret line="70" column="37" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -817,39 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-76">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/templates/registration/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="61" column="94" selection-start-line="61" selection-start-column="81" selection-end-line="61" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/urls/view_urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/static/atlas/script/topicmodeling.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,39 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/summary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/services/summary_service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/urls/service_urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1887">
-          <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -897,40 +676,297 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/templates/atlas/includes/error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/templates/registration/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/static/atlas/styles/fileupload/jquery.fileupload-ui.css" />
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/database/sourceMap.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/PyScripts/SentimentAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/static/atlas/script/search.js">
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/PyScripts/SentimentAnalysis_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-1054">
+          <caret line="168" column="8" selection-start-line="168" selection-start-column="8" selection-end-line="168" selection-end-column="97" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/atlas/templates/atlas/Search.html">
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/PyScripts/TopicModeling.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="246">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/templates/atlas/Upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="50" column="44" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="298" column="54" selection-start-line="298" selection-start-column="54" selection-end-line="298" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/static/atlas/script/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="253" column="76" selection-start-line="253" selection-start-column="76" selection-end-line="253" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/PyScripts/task1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/atlas/services/product_service.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="74">
+          <caret line="309" column="13" selection-start-line="309" selection-start-column="13" selection-end-line="309" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/atlas/config/dbConfig.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        <state relative-caret-position="221">
+          <caret line="15" column="79" selection-start-line="15" selection-start-column="79" selection-end-line="15" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/database/request.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/PyScripts/NgramMapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/templates/atlas/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="114" column="70" selection-start-line="114" selection-start-column="70" selection-end-line="114" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/static/atlas/script/clustering.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="78" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/templates/atlas/Analysis.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2805">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/templates/atlas/Clustering.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/static/atlas/script/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-71">
+          <caret line="149" column="56" selection-start-line="149" selection-start-column="56" selection-end-line="149" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/static/atlas/script/app1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="43" column="0" selection-start-line="41" selection-start-column="3" selection-end-line="43" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/static/atlas/script/topicmodeling.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="83" selection-start-line="13" selection-start-column="83" selection-end-line="13" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/static/atlas/script/analysis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="27" column="78" selection-start-line="27" selection-start-column="78" selection-end-line="27" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/templates/atlas/Search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/urls/view_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/static/atlas/script/pivotgrid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/PyScripts/ATLAS1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="422" column="17" selection-start-line="422" selection-start-column="17" selection-end-line="422" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/templates/atlas/Pivot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="48" column="70" selection-start-line="48" selection-start-column="70" selection-end-line="48" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/templates/atlas/Summary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="56" column="65" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/templates/atlas/Association.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="54" column="54" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/static/atlas/script/brand_summary.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5372">
+          <caret line="319" column="0" selection-start-line="319" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/summary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+          <folding>
+            <marker date="1526893999530" expanded="false" signature="0:127" placeholder="import ..." />
+            <marker date="1526893999530" expanded="true" signature="164:578" placeholder="..." />
+            <marker date="1526893999530" expanded="true" signature="622:733" placeholder="..." />
+            <marker date="1526893999530" expanded="true" signature="766:1176" placeholder="..." />
+            <marker date="1526893999530" expanded="true" signature="2015:2122" placeholder="..." />
+            <marker date="1526893999530" expanded="true" signature="2153:2251" placeholder="..." />
+            <marker date="1526893999530" expanded="true" signature="2283:2468" placeholder="..." />
+            <marker date="1526893999530" expanded="true" signature="2504:2587" placeholder="..." />
+            <marker date="1526893999530" expanded="true" signature="2616:2819" placeholder="..." />
+            <marker date="1526893999530" expanded="true" signature="2849:3256" placeholder="..." />
+            <marker date="1526893999530" expanded="true" signature="3302:3459" placeholder="..." />
+            <marker date="1526893999530" expanded="true" signature="3462:3921" placeholder="..." />
+            <marker date="1526893999530" expanded="true" signature="3951:4366" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/services/summary_service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="680" column="17" selection-start-line="680" selection-start-column="17" selection-end-line="680" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/urls/service_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding>
+            <marker date="1526893927719" expanded="false" signature="640:744" placeholder="import ..." />
+            <marker date="1526893927719" expanded="true" signature="762:2991" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/atlas/static/atlas/script/association.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="131" column="61" selection-start-line="131" selection-start-column="61" selection-end-line="131" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="93" column="31" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
           <folding />
         </state>
       </provider>

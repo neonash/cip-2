@@ -89,18 +89,12 @@ DATABASES = {
     },
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        #'ENGINE': 'mysql.connector.django',
-
-        # 'ENGINE': 'pure-quasar-192209:us-east1:cip-sql-v1',
-        # 'ENGINE': 'google.appengine.ext.django.backends.rdbms',
-        # 'INSTANCE': 'pure-quasar-192209:us-east1:cip-sql-v1',
-
         'NAME': 'neodb',
-        'HOST': 'localhost',
-        #'HOST': '104.196.128.148',
+        #'HOST': 'localhost',
+        'HOST': '35.231.210.213',
         'USER': 'root',
         'PASSWORD': 'root',
-        #'PASSWORD': 'GzgZ5crSI6ZV',
+        'PASSWORD': 'hhDQW3kvgNBo',
         'PORT': '3306',
     }
 }
@@ -142,7 +136,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 STATIC_ROOT = 'C:\\Users\\akshat.gupta\\PycharmProjects\\atlas\\mysite\\atlas\\static\\'
-STATIC_URL = '/static/'
+STATIC_URL = 'https://storage.googleapis.com/angelic-throne-203611.appspot.com/static/'
+
+#STATIC_URL = '/static/'
+
 
 CSRF_COOKIE_NAME = 'X-CSRFToken'
 

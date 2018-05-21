@@ -26,6 +26,7 @@ def caller_file(full_data_dict):
     #print("Entering File analysis", request)
     filecontents = full_data_dict['file_data']
     #print("filecontents:", filecontents)
+    tag_dict = full_data_dict['tag_dict']
 
     #db = pymongo.MongoClient().atlas
     #s = request.encode('utf-8')
@@ -34,7 +35,7 @@ def caller_file(full_data_dict):
     status_dict = {'status': None, "senti_list": None, 'td_list': None}
 
     print("Calling Atlas1.main2()")
-    status = ATLAS1.main2(request, filecontents)
+    status = ATLAS1.main2(request, filecontents, tag_dict)
     df.ix[(df.reqKw == request), 'reqStatus'] = "Scraping complete"
 
     # file_dict = {
@@ -66,10 +67,9 @@ def caller_file(full_data_dict):
 
     # Calling analyses files - sentiment, trigger/driver and topic modelling
     try:
-        print("Tagging the dataset with the dictionary provided")
-        # tagop_list = NgramMapping.main(full_data_dict['file_data'], full_data_dict['tag_dict'])
-        print("tagging done")
-        # df.ix[(df.reqKw == request), 'reqStatus'] = "Sentiment analysis done"
+        print("Now tagging the dataset with the dictionary provided")
+        tagop_list = NgramMapping.main(request, full_data_dict['file_data'], full_data_dict['tag_dict'])
+        df.ix[(df.reqKw == request), 'reqStatus'] = "Tagging done"
     except:
         print("Error while tagging dataset with dictionary")
         print(traceback.print_exc())
@@ -83,7 +83,7 @@ def caller_file(full_data_dict):
 
     except:
         print("Error while analysing sentiment")
-        print(traceback.print_exc())
+        #print(traceback.print_exc())
 
     try:
         td_list = TrigDriv_2.td_main2(request, full_data_dict['td_dict'])
@@ -92,7 +92,7 @@ def caller_file(full_data_dict):
         df.ix[(df.reqKw == request), 'reqStatus'] = "Trigger/driver analysis complete"
     except:
         print("Error while analysing triggers/drivers")
-        print(traceback.print_exc())
+        #print(traceback.print_exc())
 
     print "Going to topic model"
     #logging.info("going to topicmodeling.main")

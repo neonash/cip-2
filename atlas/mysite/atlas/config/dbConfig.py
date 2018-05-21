@@ -1,8 +1,8 @@
 dict = dict(logUrl=r'C:\Users\akshat.gupta\PycharmProjects\\atlas\\mysite\\atlas\\PyScripts\\Outputs\Log\\',
-            outputUrl=r'C:\Users\akshat.gupta\PycharmProjects\\mysite\\atlas\\database\\ATLAS_Universal_2.csv',
+            outputUrl=r'C:\Users\akshat.gupta\PycharmProjects\atlas\\mysite\\atlas\\database\\ATLAS_Universal_2.csv',
             outputPath=r'C:\Users\akshat.gupta\PycharmProjects\\mysite\\atlas\\database\\Outputs\\',
-            requestUrl1=r'C:\Users\akshat.gupta\PycharmProjects\\atlas\\mysite\\atlas\\database\\request.csv',
-            requestUrl=r'..\database\\request.csv',
+            requestUrl=r'C:\Users\akshat.gupta\PycharmProjects\\atlas\\mysite\\atlas\\database\\request.csv',
+            requestUrl1=r'..\\atlas\\database\\request.csv',
 
             amazonOutput=r'C:\Users\akshat.gupta\PycharmProjects\\atlas\\mysite\\atlas\\PyScripts\\Outputs\\Amazon_I\\',
             homedepotOutput='C:\Users\akshat.gupta\PycharmProjects\\atlas\\mysite\\atlas\\PyScripts\\Outputs\\HomeDepot\\',
@@ -20,4 +20,5 @@ dict = dict(logUrl=r'C:\Users\akshat.gupta\PycharmProjects\\atlas\\mysite\\atlas
             logosPath=r'C:\Users\akshat.gupta\PycharmProjects\\atlas\\mysite\\atlas\\static\\atlas\\images\\icons\\',
             sourcesUrl=r'C:\Users\akshat.gupta\PycharmProjects\\atlas\\mysite\\atlas\\database\\sourceMap.csv',
             dbfolderPath=r'C:\Users\akshat.gupta\PycharmProjects\\atlas\\mysite\\atlas\\database\\',
+            associationInput = r'C:\\Users\\akshat.gupta\\PycharmProjects\\atlas\\mysite\\atlas\\database\\fashion_brands.csv',
             )

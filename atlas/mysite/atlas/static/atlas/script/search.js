@@ -154,14 +154,14 @@
 
     var activateDashboard = function(dashboards, request) {
         $('#main-panel').removeClass('hidden');
-        console.log(dashboards["sentimentData"].length)
-        console.log(dashboards["sentimentData"])
+        console.log(dashboards["sentimentData"].length);
+        console.log(dashboards["sentimentData"]);
         if (dashboards["sentimentData"] && dashboards["sentimentData"].length > 0) {
             console.log("sentiment data available");
             $('#sentiment').removeClass('disabled');
-            $('#sentiment').attr('href', '/sentiment/?request=' + request)
+            $('#sentiment').attr('href', '/sentiment/?request=' + request);
         } else {
-            console.log('Nothing available')
+            console.log('Nothing available');
         }
     }
-})();
+    })();

@@ -15,10 +15,13 @@ $('#summary a').attr('href', '/summary/?request='+ encodeURI(query));
 $('#analysis a').attr('href', '/analysis/?request='+ encodeURI(query));
 $('#requestTopic a').attr('href', '/topicmodeling/?request='+ encodeURI(query));
 $('#clustering a').attr('href', '/clustering/?request='+ encodeURI(query));
+ $('#pivot a').attr('href','/pivot/?request=' + encodeURI(query));
+    $('#association a').attr('href','/association/?request=' + encodeURI(query));
+
 //$('#comparison a').attr('href', '/compare/?request='+ encodeURI(query));
 
 
-console.log("Changed analysis href")
+console.log("Changed analysis href");
 //console.log("Inside brand summary")
 
 var flag;  // True if query string contains '.csv', else False

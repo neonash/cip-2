@@ -1,0 +1,82 @@
+{% extends 'atlas/header.html' %}
+
+{% load staticfiles %}
+{% block title %} CIP -  Consumer Insights Platform | Clustering {% endblock %}
+
+{% block content %}
+{% verbatim %}
+
+<div id="page-wrapper">
+    <!--BEGIN TITLE & BREADCRUMB PAGE-->
+    <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+        <div class="page-header pull-left col-lg-6">
+            <div class="page-title">Pivot Grid<a class="btn btn-default btn-sm" data-toggle="modal" data-target="#helpModal" title="More info" style="border:0px;background:transparent;"><span class="glyphicon glyphicon-info-sign"></span></a></div>
+            <!-- Modal -->
+                <div id="helpModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">How to use Result Clustering</h4>
+                      </div>
+                      <div class="modal-body">
+                        <ul>
+                            <li>This chart can be used to understand groups of related topics (or clusters) covered within the dataset</li>
+                            <li>Depending on the quality of the input documents, some clusters may not make much sense</li>
+                            <li>Each cluster is assigned a label for readability, that can be clicked to see reviews pertaining to that cluster</li>
+                            <li>Some content may not be clustered at all; these will be assigned to the synthetic 'Other Topics' cluster</li>
+                        </ul>
+                      </div>
+                      <!--<div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>-->
+                    </div>
+
+                  </div>
+                </div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+    <!--END TITLE & BREADCRUMB PAGE-->
+
+    <!--BEGIN CONTENT-->
+    <div class="page-content">
+      <div class="content-wrapper" id="chartArea">
+        <div class ="row">
+            <div class="col-lg-12 col-md-12" style="overflow-x:scroll;">
+                <br/>
+                <br/>
+                <!--<div class="portlet box">-->
+                    <div class="portlet-body" style="overflow-x:scroll;">
+                        <div id="output" style="margin: 30px;overflow-x:scroll;"></div>
+                    </div>
+                <!--</div>-->
+            </div>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+{% endverbatim %}
+{% endblock %}
+
+{% block imports %}
+    <link type="text/css" rel="stylesheet" href="{% static 'atlas/styles/clustering.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.20.0/pivot.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.20.0/pivot.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.3.7/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.20.0/gchart_renderers.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.20.0/tips_data.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.20.0/export_renderers.min.js"></script>
+    <script src="{% static 'atlas/script/url_utils.js' %}"></script>
+
+
+    <!--<script src="{% static 'atlas/script/clustering.js' %}" type="text/javascript" ></script>-->
+    <script src="{% static 'atlas/script/pivotgrid.js' %}" type="text/javascript" ></script>
+
+{% endblock %}

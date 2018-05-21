@@ -32,6 +32,8 @@ urlpatterns = [
     url(r'^analysis/$', views.analysis, name='analysis'),
     url(r'^topicmodeling/$', views.topicmodeling, name='topicmodeling'),
     url(r'^clustering/$', views.clustering, name='clustering'),
+    url(r'^pivot/$', views.pivot, name='pivot'),
+    url(r'^association/$', views.association, name='association'),
     url(r'^compare/$', views.comparison, name='comparison'),
 
     #Login module views
